@@ -1,7 +1,7 @@
 import React from 'react';
 import { GiTechnoHeart } from 'react-icons/gi';
 import { MdContactPhone } from 'react-icons/md';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Header.scss';
 
 export default function Header() {

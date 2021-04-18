@@ -1,6 +1,5 @@
 import {
   Avatar,
-  CardHeader,
   IconButton,
   Table,
   TableBody,

@@ -1,11 +1,8 @@
-import { Button, CardContent, Typography } from '@material-ui/core';
-import Avatar from '@material-ui/core/Avatar';
+import { CardContent } from '@material-ui/core';
 import Card from '@material-ui/core/Card';
 import { makeStyles, Theme } from '@material-ui/core/styles';
 import { Skeleton } from '@material-ui/lab';
 import React from 'react';
-import { useHistory } from 'react-router';
-import { userDataType } from '../../interfaces';
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
