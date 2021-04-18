@@ -103,6 +103,8 @@ export default function ContactDetailPage() {
     })();
   }, [userId]);
 
+  if (!user) return <p> No selected user</p>;
+
   const firstLetterOfUserName = (userName: string) => {
     return userName.charAt(0);
   };
@@ -111,7 +113,7 @@ export default function ContactDetailPage() {
     <SkeletonContactDetailPage />
   ) : (
     <Card className={classes.root}>
-      <Typography variant='h4'>{user?.name}</Typography>
+      <Typography variant='h4'>{user.name}</Typography>
 
       <Avatar aria-label='contact' className={classes.avatar}>
         {user && firstLetterOfUserName(user.name)}
