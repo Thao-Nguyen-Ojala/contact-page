@@ -1,0 +1,58 @@
+.header {
+  background-color: rgba(112,117,122, 0.1);
+  padding: 1rem;
+  
+  &__container {
+    margin-left: 2rem;
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    max-width: 1200px;
+  }
+
+  &__logo {
+    color: #248CFB;
+    font-size: 1.3rem;
+    text-decoration: none;
+    display: flex;
+    margin-left: 1rem;
+    
+  }
+
+  &__icon {
+    font-size: 30px;
+    padding-right: 5px;
+  }
+
+  &__appName {
+    color: #248CFB;
+    font-size: 1.3rem;
+    text-decoration: none;
+    display: flex;
+    margin-right: 1rem;
+    
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .header{
+    width: 100%;
+    padding: 1rem 0;
+    margin: auto;
+    &__logo {
+      font-size: 1.1rem;
+      margin-left: 0;
+    }
+    
+    &__icon {
+      font-size: 24px;
+      padding-right: 5px;
+    }
+
+    &__appName {
+      font-size: 1.1rem;
+      margin-right: 1rem;
+    }
+  }
+}
